@@ -1,0 +1,23 @@
+.fondo{
+    width: 100%;
+    height: 600px;
+}
+
+.titulo{
+    text-align: center;
+    
+    font-family: 'Rubik', sans-serif;
+    -webkit-text-stroke: 0.5px black;
+    color: transparent;
+}
+.titulo2{
+    text-align: center;
+    font-family: 'Inclusive Sans', sans-serif;
+    font-size: 15px;
+}
+
+span{
+    font-family: 'DynaPuff';
+    -webkit-text-stroke: 0px black;
+    color: black;
+}
