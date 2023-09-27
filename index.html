@@ -4,66 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DynaPuff&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Rubik:wght@500&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style/index.css">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div class="finisher-header fondo">
-      <h1 class="titulo">HEY, I'M SABRINA BIDAL<br>BUT YOU CAN CALL ME SABRI</h1><br>
-      <h1 class="titulo3">SABRINA BIDAL</h1>
-      <h1 class="titulo4">SABRI</h1>
-      <h2 class="titulo2">I'm a Front-end web developer & UX/UI designer</h2>
-      <button class="botonrosa1">see my proyects</button>
-      <button class="botonrosa1">more about me</button>
-    </div>
+<!-- Menu -->
+<!--   <div class="menu-container">
+    <button id="toggle-menu">Menu</button>
+    <ul id="dropdown-menu">
+      <li><a href="#">Work</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div> -->
 
-    <script src="./javascript/finisher-header.es5.min.js"></script>
-    <script type="text/javascript">
-      new FinisherHeader({
-        "count": 10,
-        "size": {
-          "min": 2,
-          "max": 40,
-          "pulse": 0.2
+
+  <div class="finisher-header fondo">
+    <h1 class="titulo">HEY, I'M SABRINA BIDAL<br>BUT YOU CAN CALL ME SABRI</h1><br>
+    <h1 class="titulo3">SABRINA BIDAL</h1>
+    <h1 class="titulo4">SABRI</h1>
+    <h2 class="titulo2">I'm a Front-end web developer & UX/UI designer</h2>
+    <div class="grid">
+      <button class="botonrosa1">see my proyects</button>
+      <button class="botonrosa2">more about me</button>
+    </div>
+  </div>
+<!-- Link JavaScript -->
+  <script src="./javascript/finisher-header.es5.min.js"></script>
+  <script type="text/javascript">
+    new FinisherHeader({
+      "count": 10,
+      "size": {
+        "min": 2,
+        "max": 40,
+        "pulse": 0.2
+      },
+      "speed": {
+        "x": {
+          "min": 0,
+          "max": 0.2
         },
-        "speed": {
-          "x": {
-            "min": 0,
-            "max": 0.2
-          },
-          "y": {
-            "min": 0,
-            "max": 0.2
-          }
-        },
-        "colors": {
-          "background": "#ffffff",
-          "particles": [
-            "#b5838d",
-            "#6d6875",
-            "#e5989b",
-            "#ffb4a2",
-            "#ffcdb2"
-          ]
-        },
-        "blending": "screen",
-        "opacity": {
-          "center": 0.65,
-          "edge": 0.65
-        },
-        "skew": 0,
-        "shapes": [
-          "c"
+        "y": {
+          "min": 0,
+          "max": 0.2
+        }
+      },
+      "colors": {
+        "background": "#ffffff",
+        "particles": [
+          "#b5838d",
+          "#6d6875",
+          "#e5989b",
+          "#ffb4a2",
+          "#ffcdb2"
         ]
-      });
+      },
+      "blending": "screen",
+      "opacity": {
+        "center": 0.65,
+        "edge": 0.65
+      },
+      "skew": 0,
+      "shapes": [
+        "c"
+      ]
+    });
   </script>
 </body>
 </html>

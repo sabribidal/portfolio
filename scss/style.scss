@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&display=swap');
+
+.fondo{
+    width: 100%;
+    height: 100vh;
+    display: flex; flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo{
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    -webkit-text-stroke: 0.5px #403D45;
+    color: transparent;
+}
+.titulo2{
+    text-align: center;
+    font-family: 'Inclusive Sans', sans-serif;
+    color: #403D45;
+    font-size: 15px;
+}
+.titulo3{
+    font-family: 'Rubik', sans-serif;
+    color: #403D45;
+    position: absolute;
+    z-index: 1;
+    top: 242px;
+    left: 621px;
+}
+.titulo4{
+    font-family: 'Rubik', sans-serif;
+    color: #403D45;
+    position: absolute;
+    z-index: 1;
+    top: 280px;
+    left: 808px;
+}
+.botonrosa1{
+    background-color: #ffdecd;
+    height: 38px;
+    width: 191px;
+    border: none;
+    border-radius: 19px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #403D45;
+}
+.botonrosa2{
+    background-color: #ffdecd;
+    height: 38px;
+    width: 191px;
+    border: none;
+    border-radius: 19px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #403D45;
+}
+
+/* GRID HOME */
+.grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-area:
+    "botonrosa1" "botonrosa2"
+    ; 
+}
+
+/* Menu */
+.menu-container{
+    position: relative;
+    display: inline-block;  
+}
+#dropdown-menu{
+    display: none;
+    position: absolute;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+#dropdown-menu li{
+    padding: 10px;
+}
+#dropdown-menu li a{
+    text-decoration: none;
+    color: pink;
+}
+
+#toggle-menu{
+    text-decoration: none;
+    color: pink;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
