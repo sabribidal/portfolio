@@ -8,25 +8,30 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+<!-- Puntero del mouse -->
+  <div class="custom-pointer">
+    <div class="inner-circle"></div>
+  </div>
 <!-- Menu -->
-<!--   <div class="menu-container">
-    <button id="toggle-menu">Menu</button>
+  <div class="menu-container">
+    <button class="toggle" onmouseover="cambiarImagen()" onmouseout="restaurarImagen()" onclick="salir()">
+      <img src="./img/Frame_1-removebg-preview.png" alt="" id="toggle-menu" class="miImagen">
+    </button>
     <ul id="dropdown-menu">
-      <li><a href="#">Work</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="./pages/work.html">Work</a></li>
+      <li><a href="./pages/about.html">About</a></li>
+      <li><a href="./pages/contact.html">Contact</a></li>
     </ul>
-  </div> -->
+  </div>
 
 
   <div class="finisher-header fondo">
-    <h1 class="titulo">HEY, I'M SABRINA BIDAL<br>BUT YOU CAN CALL ME SABRI</h1><br>
+    <h1 class="titulo">HEY, I'M SABRINA BIDAL
     <h1 class="titulo3">SABRINA BIDAL</h1>
-    <h1 class="titulo4">SABRI</h1>
     <h2 class="titulo2">I'm a Front-end web developer & UX/UI designer</h2>
     <div class="grid">
-      <button class="botonrosa1">see my proyects</button>
-      <button class="botonrosa2">more about me</button>
+      <a href="./pages/work.html"><button class="botonrosa1">see my proyects</button></a>
+      <a href="./pages/about.html"><button class="botonrosa2">more about me</button></a>
     </div>
   </div>
 <!-- Link JavaScript -->
