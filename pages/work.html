@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work</title>
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="container">
+  <!-- Puntero del mouse -->
+    <div class="custom-pointer">
+      <div class="inner-circle"></div>
+    </div>
+  
+  <!-- Menu -->
+    <div class="boton-menu">
+      <button class="menu">
+        <div>
+          <svg class="icons-style" viewBox="0 0 500 500">
+            <title>Menu</title>
+            <circle cx="250" cy="250" r="35"/>
+            <circle cx="250" cy="400" r="35"/>
+            <circle cx="100" cy="400" r="35"/>
+            <circle cx="100" cy="250" r="35"/>
+            <circle cx="100" cy="100" r="35"/>
+            <circle cx="250" cy="100" r="35"/>
+            <circle cx="400" cy="250" r="35"/>
+            <circle cx="400" cy="400" r="35"/>
+            <circle cx="400" cy="100" r="35"/>
+          </svg>
+        </div>
+      </button>
+      <nav class="navBar">
+        <button class="cerrar">
+          <svg class="boton-cerrar" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+            <title>Close</title>
+            <rect x="50.0711" y="99.5685" width="70" height="495.03" rx="35" transform="rotate(-45 50.0711 99.5685)"/>
+            <rect x="-7.07107" width="70" height="495.03" rx="35" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 444.673 94.6339)"/>
+          </svg>        
+        </button>
+        <ul class="navBar-list">
+          <li><a href="../index.html"><span>01.</span>Home</a></li>
+          <li><a href="#"><span>02.</span>Work</a></li>
+          <li><a href="about.html"><span>03.</span>About</a></li>
+          <li><a href="contact.html"><span>04.</span>Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  
+<!-- Main -->
+  <div class="finisher-header fondo">
+    <div class="proyects imgPoput" id="img1">
+      <img src="../img/StudyGoArch.jpg" alt="Proyect Go.Arch Study">
+    </div>
+    <div class="proyect-list">
+      <div class="page-name">
+        <h1 class="titleP">WORK</h1>
+        <h5 class="number-proyect">2</h5>
+      </div>
+      <hr class="separator">
+      <div>
+        <ul class="proyect-items">
+          <li onmouseover="mostrarImg('img1')" onmouseout="ocultarImg('img1')">
+            <a href="#"></a>
+            <div class="item">
+              <h4>Go.Arch study</h4>
+              <p>Web Development</p>
+            </div>
+          </li>
+          <hr class="separator">
+          <li>
+            <a href="#"></a>
+            <div class="item">
+              <h4 class="titulo2">Organic</h4>
+              <p class="titulo2">Ecommerce</p>
+            </div>
+          </li>
+          <hr class="separator">
+        </ul>
+      </div>
+    </div>
+  </div>
+
+<!-- Link JavaScript -->
+  <script src="../javascript/finisher-header.es5.min.js"></script>
+  <script type="text/javascript">
+    new FinisherHeader({
+      "count": 10,
+      "size": {
+        "min": 2,
+        "max": 40,
+        "pulse": 0.2
+      },
+      "speed": {
+        "x": {
+          "min": 0,
+          "max": 0.2
+        },
+        "y": {
+          "min": 0,
+          "max": 0.2
+        }
+      },
+      "colors": {
+        "background": "#ffffff",
+        "particles": [
+          "#b5838d",
+          "#6d6875",
+          "#e5989b",
+          "#ffb4a2",
+          "#ffcdb2"
+        ]
+      },
+      "blending": "screen",
+      "opacity": {
+        "center": 0.65,
+        "edge": 0.65
+      },
+      "skew": 0,
+      "shapes": [
+        "c"
+      ]
+    });
+  </script>
+</body>
+</html>

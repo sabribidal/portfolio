@@ -1,0 +1,28 @@
+.button1{
+    background-color: $color-button;
+    font-family: $font-titulos;
+    height: 38px;
+    width: 191px;
+    border: none;
+    border-radius: 19px;
+    box-shadow: $shadow-button;
+    color: #403D45;
+    cursor: pointer;
+    margin-left: 8px; margin-right: 8px;
+}
+.button2{
+    background-color: $color-button;
+    font-family: $font-titulos;
+    height: 38px;
+    width: 191px;
+    border: none;
+    border-radius: 19px;
+    box-shadow: $shadow-button;
+    color: $color-text;
+    cursor: pointer;
+    margin-left: 8px; margin-right: 8px;
+}
+.botonrosa1:hover, .botonrosa2:hover{
+    text-decoration: underline;
+    background-color: $color-button-hover;
+}

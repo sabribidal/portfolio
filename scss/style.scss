@@ -1,25 +1,22 @@
+@import "variables";
+@import "buttons";
+@import "home";
+@import "work";
+@import "contact";
+@import "about";
+/* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&display=swap');
 
-/* Puntero del mouse */
-.custom-pointer {
-    display: flex; justify-content: center; align-items: center;
-    position: absolute;
-    width: 25px; height: 25px;
-    background-color: transparent; /* Color del círculo del puntero */
-    border-radius: 50%; /* Forma de círculo */
-    border: 1px solid #A09DA5;
-    pointer-events: none; /* Evita que el puntero personalizado afecte la interacción con otros elementos */
-    transform: translate(-50%, -50%); /* Ajusta el centro del círculo al puntero del mouse */
-    transition: transform 0.2s; /* Agrega una transición suave */
-}
-.inner-circle {
-    width: 5px; height: 5px; 
-    background-color: #A09DA5; /* Color del círculo interno */
-    border-radius: 50%; /* Forma de círculo */
+
+.container{
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin: 0; padding: 0;
 }
 
-.fondo{
+.fondo{ /* circulos */
     width: 100%;
     height: 100vh;
     display: flex; flex-direction: column;
@@ -27,95 +24,95 @@
     align-items: center;
 }
 
-.titulo{
-    font-size: 50px;
-    text-align: center;
-    font-family: 'Rubik', sans-serif;
-    -webkit-text-stroke: 0.5px #403D45;
-    color: transparent;
-}
-.titulo2{
-    text-align: center;
-    font-family: 'Inclusive Sans', sans-serif;
-    color: #403D45;
-    font-size: 15px;
-}
-.titulo3{
-    font-size: 50px;
-    font-family: 'Rubik', sans-serif;
-    color: #403D45;
+/* Puntero del mouse */
+.custom-pointer {
+    display: flex; justify-content: center; align-items: center;
     position: absolute;
-    z-index: 1;
-    top: 244px;
-    left: 590px;
-}
-.botonrosa1{
-    background-color: #ffdecd;
-    font-family: 'Inclusive Sans', sans-serif;
-    height: 38px;
-    width: 191px;
-    border: none;
-    border-radius: 19px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    color: #403D45;
-    cursor: pointer;
-}
-.botonrosa2{
-    background-color: #ffdecd;
-    font-family: 'Inclusive Sans', sans-serif;
-    height: 38px;
-    width: 191px;
-    border: none;
-    border-radius: 19px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    color: #403D45;
-    cursor: pointer;
-}
+    z-index: 3;
+    width: 25px; height: 25px;
+    background-color: transparent; /* Color del círculo del puntero */
+    border-radius: 50%; /* Forma de círculo */
+    border: 1px solid #A09DA5;
+    pointer-events: none; /* Evita que el puntero personalizado afecte la interacción con otros elementos */
+    transform: translate(-50%, -50%); /* Ajusta el centro del círculo al puntero del mouse */
+    transition: transform 0.2s; /* Agrega una transición suave */
 
-/* GRID HOME */
-.grid{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: auto;
-    grid-area:
-    "botonrosa1" "botonrosa2"
-    ; 
+    .inner-circle{
+        width: 5px; height: 5px; 
+        background-color: #A09DA5; /* Color del círculo interno */
+        border-radius: 50%; /* Forma de círculo */
+    }    
 }
 
 /* Menu */
-.menu-container{
+.boton-menu{
     position: absolute;
-/*     display: inline-block;  
- */}
-#dropdown-menu{
-    display: none;
-    position: absolute;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    background-color: #fff;
-    border: 1px solid #ccc;
-}
-#dropdown-menu li{
-    padding: 10px;
-}
-#dropdown-menu li a{
-    text-decoration: none;
-    color: pink;
-}
-
-.toggle{
-    background-color: transparent;
-    border: none;
-}
-#toggle-menu{
+    right: 10%;
+    top: 10%;
     width: 50px; height: 50px;
-    cursor: pointer;
-    border: none;
+    z-index: 1;
+
+    .menu, .cerrar{
+        padding: 0;
+        border: none;
+        background: none;
+        outline: none;
+        cursor: pointer;
+
+        .icons-style{
+            width: 50px; height: 50px;
+            fill: none;
+            stroke: #606887;
+            stroke-width: 20px;
+            display: block
+        }
+
+        .boton-cerrar{
+            width: 50px; height: 50px;
+            fill: none;
+            stroke: #606887;
+            stroke-width: 20px;
+            display: block;
+            position: absolute;
+            right: 10%;
+            top: 10%;
+        }
+    }
 }
 
+/* NavBar */
+.navBar{
+    z-index: 2;
+    display: none; 
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0; left: 0;
+    background-image: url('../img/Background-NavBar.png'); 
+    background-size: cover;
 
-.miImage{
-    width: 50px;
-    height: 50px;
+    .navBar-list{
+        list-style: none;
+        position: absolute;
+        top: 22%; left: 28%;
+        padding: 0; margin: 0;
+    }
+
+    li{
+        margin-bottom: 10px;
+        font-family: $font-principal;
+        font-size: 70px;
+        text-align: left;
+        
+        span{
+            font-family: $font-titulos;
+            font-size: 20px;
+            margin: 15px;
+        }
+    }
+
+    a{
+        text-decoration: none;
+        color: black;
+    }
 }

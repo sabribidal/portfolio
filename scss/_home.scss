@@ -1,0 +1,21 @@
+.titleP{
+    font-size: 50px;
+    text-align: center;
+    font-family: $font-principal;
+    -webkit-text-stroke: 0.5px #403D45;
+    color: transparent;
+    position: relative;
+    margin: 0;    
+    span{
+        color: $color-text;
+        -webkit-text-stroke: 0px;
+    }
+}
+.description{
+    text-align: center;
+    font-family: $font-titulos;
+    color: $color-text;
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 40px;
+}

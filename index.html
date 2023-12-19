@@ -7,33 +7,57 @@
     <!-- Link CSS -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
+<body class="container">
 <!-- Puntero del mouse -->
   <div class="custom-pointer">
     <div class="inner-circle"></div>
   </div>
+
 <!-- Menu -->
-  <div class="menu-container">
-    <button class="toggle" onmouseover="cambiarImagen()" onmouseout="restaurarImagen()" onclick="salir()">
-      <img src="./img/Frame_1-removebg-preview.png" alt="" id="toggle-menu" class="miImagen">
+  <div class="boton-menu">
+    <button class="menu">
+      <div>
+        <svg class="icons-style" viewBox="0 0 500 500">
+          <title>Menu</title>
+          <circle cx="250" cy="250" r="35"/>
+          <circle cx="250" cy="400" r="35"/>
+          <circle cx="100" cy="400" r="35"/>
+          <circle cx="100" cy="250" r="35"/>
+          <circle cx="100" cy="100" r="35"/>
+          <circle cx="250" cy="100" r="35"/>
+          <circle cx="400" cy="250" r="35"/>
+          <circle cx="400" cy="400" r="35"/>
+          <circle cx="400" cy="100" r="35"/>
+        </svg>
+      </div>
     </button>
-    <ul id="dropdown-menu">
-      <li><a href="./pages/work.html">Work</a></li>
-      <li><a href="./pages/about.html">About</a></li>
-      <li><a href="./pages/contact.html">Contact</a></li>
-    </ul>
+    <nav class="navBar">
+      <button class="cerrar">
+        <svg class="boton-cerrar" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+          <title>Close</title>
+          <rect x="50.0711" y="99.5685" width="70" height="495.03" rx="35" transform="rotate(-45 50.0711 99.5685)"/>
+          <rect x="-7.07107" width="70" height="495.03" rx="35" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 444.673 94.6339)"/>
+        </svg>        
+      </button>
+      <ul class="navBar-list">
+        <li><a href="#"><span>01.</span>Home</a></li>
+        <li><a href="./pages/work.html"><span>02.</span>Work</a></li>
+        <li><a href="./pages/about.html"><span>03.</span>About</a></li>
+        <li><a href="./pages/contact.html"><span>04.</span>Contact</a></li>
+      </ul>
+    </nav>
   </div>
 
-
+<!-- Main -->
   <div class="finisher-header fondo">
-    <h1 class="titulo">HEY, I'M SABRINA BIDAL
-    <h1 class="titulo3">SABRINA BIDAL</h1>
-    <h2 class="titulo2">I'm a Front-end web developer & UX/UI designer</h2>
+    <h1 class="titleP">HEY, I'M <span>SABRINA BIDAL</span></h1>
+    <h2 class="description">I'm a Front-end Web Developer & UX/UI Designer</h2>
     <div class="grid">
-      <a href="./pages/work.html"><button class="botonrosa1">see my proyects</button></a>
-      <a href="./pages/about.html"><button class="botonrosa2">more about me</button></a>
+      <a href="./pages/work.html"><button class="button1">see my proyects</button></a>
+      <a href="./pages/about.html"><button class="button2">more about me</button></a>
     </div>
   </div>
+  
 <!-- Link JavaScript -->
   <script src="./javascript/finisher-header.es5.min.js"></script>
   <script type="text/javascript">
