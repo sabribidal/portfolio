@@ -32,3 +32,30 @@
         margin-top: 10px;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .contact{
+        margin: 0;
+        left: unset;
+        width: 380px;
+        transform: translateY(75px);
+    }
+
+    .page-name-contact{
+        width: 100%;
+    }
+
+    .redes{
+        .title-redes{
+            text-align: unset;
+        }
+    }
+
+    .list-redes{
+        flex-direction: column;
+    }
+
+    .mail, .redes{
+        justify-content: space-between;
+    }
+}

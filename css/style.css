@@ -37,6 +37,11 @@
   background-color: #f5d6c6;
 }
 
+@media only screen and (max-width: 600px) {
+  .button1, .button2 {
+    margin: 8px;
+  }
+}
 .titleP {
   font-size: 50px;
   text-align: center;
@@ -60,6 +65,15 @@
   margin-bottom: 40px;
 }
 
+@media only screen and (max-width: 600px) {
+  .titleP {
+    font-size: 52px;
+  }
+  .grid {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .proyects {
   position: absolute;
   bottom: 0;
@@ -87,7 +101,7 @@
   transform: translateY(30px);
 }
 .proyect-list .page-name {
-  width: 430px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
@@ -144,6 +158,26 @@
   opacity: 1;
 }
 
+@media only screen and (max-width: 600px) {
+  .proyect-list {
+    position: unset;
+    margin: 15px;
+    width: 380px;
+    transform: translateY(220px);
+  }
+  .proyect-list .proyect-items {
+    width: 380px;
+  }
+  .proyects {
+    top: 20%;
+    left: unset;
+    width: 380px;
+    height: 320px;
+  }
+  .proyects img {
+    border-radius: 30px;
+  }
+}
 .contact {
   position: absolute;
   left: 0px;
@@ -181,6 +215,26 @@
   margin-top: 10px;
 }
 
+@media only screen and (max-width: 600px) {
+  .contact {
+    margin: 0;
+    left: unset;
+    width: 380px;
+    transform: translateY(75px);
+  }
+  .page-name-contact {
+    width: 100%;
+  }
+  .redes .title-redes {
+    text-align: unset;
+  }
+  .list-redes {
+    flex-direction: column;
+  }
+  .mail, .redes {
+    justify-content: space-between;
+  }
+}
 .photo-me {
   position: absolute;
   right: 0;
@@ -220,6 +274,26 @@
   margin-bottom: 40px;
 }
 
+@media only screen and (max-width: 600px) {
+  .photo-me {
+    top: 15%;
+    right: unset;
+    width: 380px;
+    height: 500px;
+  }
+  .photo-me img {
+    border-radius: 30px;
+  }
+  .about {
+    width: 380px;
+    left: unset;
+    margin: 0;
+    transform: translateY(400px);
+  }
+  .about .page-name-me {
+    width: 100%;
+  }
+}
 /* Fonts */
 .container {
   position: relative;
@@ -331,6 +405,16 @@
 .navBar a {
   text-decoration: none;
   color: black;
+}
+
+@media only screen and (max-width: 600px) {
+  .navBar .navBar-list {
+    top: 280px;
+    left: 40px;
+  }
+  .container {
+    overflow: auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

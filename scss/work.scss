@@ -24,7 +24,7 @@
     transform: translateY(30px);
 
     .page-name{
-        width: 430px;
+        width: 100%;
         display: flex;
         justify-content: space-between;
         
@@ -81,4 +81,26 @@
 .imgPoput.mostrar{
     display: block;
     opacity: 1;
+}
+
+@media only screen and (max-width: 600px) {
+    .proyect-list{
+        position: unset;
+        margin: 15px;
+        width: 380px;
+        transform: translateY(220px);
+        .proyect-items{
+            width: 380px;
+        }
+    }
+    
+    .proyects{
+        top: 20%; left: unset;
+        width: 380px;
+        height: 320px;
+
+        img{
+            border-radius: 30px;
+        }
+    }
 }

@@ -116,3 +116,15 @@
         color: black;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .navBar{
+        .navBar-list{
+            top: 280px; left: 40px;
+        }
+    }
+
+    .container{
+        overflow: auto;
+    }
+}

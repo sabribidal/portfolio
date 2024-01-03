@@ -37,3 +37,26 @@
         margin-bottom: 40px;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .photo-me{
+        top: 15%; right: unset;
+        width: 380px;
+        height: 500px;
+
+        img{
+            border-radius: 30px;
+        }
+    }
+
+    .about{
+        width: 380px;
+        left: unset;
+        margin: 0;
+        transform: translateY(400px);
+
+        .page-name-me{
+            width: 100%;
+        }
+    }
+}

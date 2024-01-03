@@ -19,3 +19,13 @@
     margin-top: 5px;
     margin-bottom: 40px;
 }
+
+@media only screen and (max-width: 600px) {
+    .titleP{
+        font-size: 52px;
+    }
+
+    .grid{
+        display: flex; flex-direction: column;
+    }
+}
