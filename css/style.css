@@ -32,7 +32,7 @@
   margin-right: 8px;
 }
 
-.botonrosa1:hover, .botonrosa2:hover {
+.button1:hover, .button2:hover {
   text-decoration: underline;
   background-color: #f5d6c6;
 }
@@ -134,6 +134,7 @@
   font-size: 15px;
 }
 .proyect-list .proyect-items .item p {
+  align-self: center;
   text-align: center;
   font-family: "Inclusive Sans", sans-serif;
   color: #403D45;
@@ -358,6 +359,7 @@
   stroke: #606887;
   stroke-width: 20px;
   display: block;
+  transition: transform 0.3s ease;
 }
 .boton-menu .menu .boton-cerrar, .boton-menu .cerrar .boton-cerrar {
   width: 50px;
@@ -369,6 +371,10 @@
   position: absolute;
   right: 10%;
   top: 10%;
+  transition: transform 0.3s ease;
+}
+.boton-menu .menu:hover .icons-style, .boton-menu .menu:hover .boton-cerrar, .boton-menu .cerrar:hover .icons-style, .boton-menu .cerrar:hover .boton-cerrar {
+  transform: rotate(45deg);
 }
 
 /* NavBar */
@@ -380,8 +386,7 @@
   height: 100vh;
   top: 0;
   left: 0;
-  background-image: url("../img/Background-NavBar.png");
-  background-size: cover;
+  background-color: #ffcdb2;
 }
 .navBar .navBar-list {
   list-style: none;
@@ -405,6 +410,9 @@
 .navBar a {
   text-decoration: none;
   color: black;
+  /*         &:hover{
+              text-decoration: underline;
+          } */
 }
 
 @media only screen and (max-width: 600px) {
