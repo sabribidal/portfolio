@@ -74,66 +74,84 @@
     flex-direction: column;
   }
 }
+.fondo-work {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 .proyects {
+  display: flex;
+  width: 100%;
+  height: 65%;
+}
+.proyects .proyects-left {
   position: absolute;
   bottom: 0;
   left: 0;
-  height: 430px;
-  width: 600px;
+  height: 65%;
+  width: 50%;
   overflow: hidden;
 }
-.proyects img {
+.proyects .proyects-left img {
   width: 100%;
   height: 100%;
   display: block;
   object-fit: cover;
   border-radius: 0 50px 0 0;
 }
-
-.proyect-list {
+.proyects .proyects-right {
+  width: 50%;
   position: absolute;
   right: 0;
+}
+.proyects .proyects-right .proyect-name {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-right: 20%;
-  width: 430px;
-  transform: translateY(30px);
+  width: 60%;
+  margin-left: 10%;
 }
-.proyect-list .page-name {
+.proyects .proyects-right .proyect-name .page-name {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-.proyect-list .page-name .number-proyect {
+.proyects .proyects-right .proyect-name .page-name .number-proyect {
   font-family: "Inclusive Sans", sans-serif;
   font-size: 24px;
   margin: 0;
   margin-bottom: 5px;
   align-self: flex-end;
 }
-.proyect-list .proyect-items {
+.proyects .proyects-right .proyect-name .proyect-list {
+  width: 100%;
+}
+.proyects .proyects-right .proyect-name .proyect-list .proyect-items {
   display: flex;
   flex-direction: column;
-  width: 430px;
+  width: 100%;
   padding: 0;
   margin: 0;
 }
-.proyect-list .proyect-items li {
+.proyects .proyects-right .proyect-name .proyect-list .proyect-items li {
   list-style: none;
   cursor: pointer;
 }
-.proyect-list .proyect-items .item {
+.proyects .proyects-right .proyect-name .proyect-list .proyect-items .item {
   display: flex;
   justify-content: space-between;
 }
-.proyect-list .proyect-items .item h4 {
+.proyects .proyects-right .proyect-name .proyect-list .proyect-items .item h4 {
   text-align: center;
   font-family: "Inclusive Sans", sans-serif;
   color: #403D45;
   font-size: 15px;
 }
-.proyect-list .proyect-items .item p {
+.proyects .proyects-right .proyect-name .proyect-list .proyect-items .item p {
   align-self: center;
   text-align: center;
   font-family: "Inclusive Sans", sans-serif;
@@ -160,23 +178,28 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .proyect-list {
-    position: unset;
-    margin: 15px;
-    width: 380px;
-    transform: translateY(220px);
-  }
-  .proyect-list .proyect-items {
-    width: 380px;
-  }
   .proyects {
-    top: 20%;
-    left: unset;
-    width: 380px;
-    height: 320px;
+    height: 80%;
+    justify-content: center;
   }
-  .proyects img {
-    border-radius: 30px;
+  .proyects .proyects-left {
+    left: unset;
+    bottom: unset;
+    width: 90%;
+    height: 30%;
+  }
+  .proyects .proyects-left img {
+    border-radius: 30px 30px 30px 30px;
+  }
+  .proyects .proyects-right {
+    width: 90%;
+    right: unset;
+    bottom: 0;
+  }
+  .proyects .proyects-right .proyect-name {
+    margin-left: unset;
+    margin-bottom: 20%;
+    width: unset;
   }
 }
 .contact {
@@ -406,13 +429,14 @@
   font-family: "Inclusive Sans", sans-serif;
   font-size: 20px;
   margin: 15px;
+  text-decoration: none;
 }
 .navBar a {
   text-decoration: none;
-  color: black;
-  /*         &:hover{
-              text-decoration: underline;
-          } */
+  color: #403D45;
+}
+.navBar a:hover {
+  color: #2c2a2f;
 }
 
 @media only screen and (max-width: 600px) {
