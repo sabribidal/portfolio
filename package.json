@@ -1,14 +1,11 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": ".fondo{\r     width: 100%;\r     height: 100vh;\r     display: flex; flex-direction: column;\r     justify-content: center;\r     align-items: center;\r }",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "bootstrap-icons": "^1.11.2"
-  }
+  "license": "ISC"
 }

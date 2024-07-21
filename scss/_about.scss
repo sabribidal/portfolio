@@ -1,20 +1,31 @@
-.photo-me{
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 300px;
-    height: 550px;
-    overflow: hidden;
-    
-    img{
-        width: 100%;
-        height: 100%;
-        display: block;
-        object-fit: cover;
-        border-radius: 0 0 0 50px;
-        opacity: 0.6;
+.backgroundAbout{
+    background-color: $color-background;
+    width: 100%; height: 100%;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .circle5{
+        width: 230px;         
+        height: 200px;      
+        background-color: $color4; 
+        border-radius: 50%; 
+        filter: blur(100px);  
+        position: absolute;
+        transform: translate(400%, -60%);
+    }
+    .circle6{
+        width: 280px;         
+        height: 270px;      
+        background-color: $color1; 
+        border-radius: 50%; 
+        filter: blur(100px);  
+        position: absolute;
+        transform: translate(300%, 50%);
     }
 }
+
 .about{
     position: absolute;
     left: 0px;
@@ -26,11 +37,19 @@
         display: flex; flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
+
+        .titlePa{
+            font-family: $font-titulos;
+            font-size: 50px;
+            -webkit-text-stroke: 1px $color-text;
+            color: transparent;
+            margin: 0;
+        }
     }
 
     .description-me{
         text-align: start;
-        font-family: $font-titulos;
+        font-family: $font-principal;
         color: $color-text;
         font-size: 15px;
         margin-top: 20px;
@@ -38,7 +57,39 @@
     }
 }
 
-@media only screen and (max-width: 600px) {
+.containerButtonC{
+    position: relative;
+    display: inline-block;
+    
+    .tooltip {
+        visibility: visible;
+        background-color: #787878;
+        color: #fff;
+        text-align: center;
+        border-radius: 10px;
+        padding: 10px;
+        position: absolute;
+        z-index: 1;
+        bottom: -120%;
+        margin-left: -5px;
+        opacity: 0;
+        transition: opacity 0.3s;
+        border-radius: 10px;
+        font-family: $font-principal;
+        font-size: 12px;
+        font-weight: 400;
+        width: 130px;
+        display: flex;
+        justify-content: center;
+    }
+}
+.button3:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/* @media only screen and (max-width: 600px) {
     .photo-me{
         top: 15%; right: unset;
         width: 380px;
@@ -59,4 +110,4 @@
             width: 100%;
         }
     }
-}
+} */

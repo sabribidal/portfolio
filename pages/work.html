@@ -4,16 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../img/Favicon-work.png" type="image/x-icon">
-    <title>Work</title>
+    <title>Work | Sabrina Bidal | Web Developer</title>
     <!-- Link CSS -->
     <link rel="stylesheet" href="../css/style.css">
-</head>
-<body class="container">
-  <!-- Puntero del mouse -->
-    <div class="custom-pointer">
-      <div class="inner-circle"></div>
-    </div>
-  
+  </head>
+  <body class="container">
   <!-- Menu -->
     <div class="boton-menu">
       <button class="menu">
@@ -33,6 +28,7 @@
         </div>
       </button>
       <nav class="navBar">
+        <div class="circle3"></div>
         <button class="cerrar">
           <svg class="boton-cerrar" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
             <title>Close</title>
@@ -41,45 +37,47 @@
           </svg>        
         </button>
         <ul class="navBar-list">
-          <li><a href="../index.html"><span>01.</span>Home</a></li>
-          <li><a href="#"><span>02.</span>Work</a></li>
-          <li><a href="about.html"><span>03.</span>About</a></li>
-          <li><a href="contact.html"><span>04.</span>Contact</a></li>
+          <li class="underline"><a href="../index.html"><span>01.</span>Home</a></li>
+          <li class="underline"><a href="#"><span>02.</span>Work</a></li>
+          <li class="underline"><a href="about.html"><span>03.</span>About</a></li>
         </ul>
       </nav>
     </div>
   
-<!-- Main -->
-  <div class="finisher-header fondo-work">
+  <!-- Main -->
+  <main class="backgroundWork">
+    <div class="circle4"></div>
     <div class="proyects">
+
       <div class="proyects-left imgPoput" id="img1">
         <img src="../img/StudyGoArch.jpg" alt="Proyect Go.Arch Study">
       </div>
       <div class="proyects-left imgPoput" id="img2">
         <img src="../img/Organic.png" alt="Proyect Organic">
       </div>
+
       <div class="proyects-right">
         <div class="proyect-name">
           <div class="page-name">
-            <h1 class="titleP">WORK</h1>
+            <h1 class="titlePw">WORK</h1>
             <h5 class="number-proyect">2</h5>
           </div>
           <hr class="separator">
           <div class="proyect-list">
             <ul class="proyect-items">
               <li onmouseover="mostrarImg('img1')" onmouseout="ocultarImg('img1')" onclick="mostrarImg('img1')">
-                <a href="#"></a>
                 <div class="item">
                   <h4>Go.Arch study</h4>
                   <p>Web Development</p>
+                  <a class="verMas" href="#">See more -></a>
                 </div>
               </li>
               <hr class="separator">
               <li onmouseover="mostrarImg('img2')" onmouseout="ocultarImg('img2')" onclick="mostrarImg('img2')">
-                <a href="#"></a>
                 <div class="item">
                   <h4 class="titulo2">Organic</h4>
                   <p class="titulo2">Ecommerce</p>
+                  <a class="verMas" href="#">See more -></a>
                 </div>
               </li>
               <hr class="separator">
@@ -88,48 +86,9 @@
         </div>
       </div>
     </div>
-  </div>
+  </main>
 
 <!-- Link JavaScript -->
-  <script src="../javascript/finisher-header.es5.min.js"></script>
-  <script type="text/javascript">
-    new FinisherHeader({
-      "count": 10,
-      "size": {
-        "min": 2,
-        "max": 40,
-        "pulse": 0.2
-      },
-      "speed": {
-        "x": {
-          "min": 0,
-          "max": 0.2
-        },
-        "y": {
-          "min": 0,
-          "max": 0.2
-        }
-      },
-      "colors": {
-        "background": "#ffffff",
-        "particles": [
-          "#b5838d",
-          "#6d6875",
-          "#e5989b",
-          "#ffb4a2",
-          "#ffcdb2"
-        ]
-      },
-      "blending": "screen",
-      "opacity": {
-        "center": 0.65,
-        "edge": 0.65
-      },
-      "skew": 0,
-      "shapes": [
-        "c"
-      ]
-    });
-  </script>
+  <script src="../javascript/interactions.js"></script>
 </body>
 </html>

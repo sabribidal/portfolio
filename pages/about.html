@@ -33,6 +33,7 @@
       </div>
     </button>
     <nav class="navBar">
+      <div class="circle3"></div>
       <button class="cerrar">
         <svg class="boton-cerrar" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
           <title>Close</title>
@@ -41,72 +42,42 @@
         </svg>        
       </button>
       <ul class="navBar-list">
-        <li><a href="../index.html"><span>01.</span>Home</a></li>
-        <li><a href="work.html"><span>02.</span>Work</a></li>
-        <li><a href="#"><span>03.</span>About</a></li>
-        <li><a href="contact.html"><span>04.</span>Contact</a></li>
+        <li class="underline"><a href="../index.html"><span>01.</span>Home</a></li>
+        <li class="underline"><a href="work.html"><span>02.</span>Work</a></li>
+        <li class="underline"><a href="#"><span>03.</span>About</a></li>
       </ul>
     </nav>
   </div>
 
 <!-- Main -->
-  <div class="finisher-header fondo">
-    <div class="photo-me">
-      <img src="../img/SabrinaBidal.jpg" alt="Sabrina Bidal">
-    </div>
+  <div class="backgroundAbout">
+    <div class="circle5"></div>
+    <div class="circle6"></div>    
+
     <div class="about">
       <div class="page-name-me">
-        <h1 class="titleP">ABOUT</h1>
+        <h1 class="titlePa">ABOUT</h1>
         <hr class="separator">
       </div>
-      <p class="description-me">Currently based in Entre Ríos, Argentina, I am passionate about continuous learning and putting my knowledge into practice through challenges. I strive to get out of my comfort zone, set new goals and embrace personal growth, dedication, perseverance and effort. Excited to discover new challenges that expand my horizons and contribute to my professional development. I have been working with multiple tools and technologies for the last few years. HTML, CSS/SCSS, JavaScript, Wordpress, Figma, Photoshop, Spline, Github and more.
+      <p class="description-me">Currently based in Entre Ríos, Argentina, I am passionate about continuous learning and putting my knowledge into practice through challenges. I strive to get out of my comfort zone, set new goals and embrace personal growth, dedication, perseverance and effort. Excited to discover new challenges that expand my horizons and contribute to my professional development.<br>
+      I have been working with multiple tools and technologies for the last few years. HTML, CSS/SCSS, JavaScript, Wordpress, Figma, Photoshop, Spline, Github and more.
       </p>
-      <a>
-        <button class="button1" id="botonPDF" style="margin-left: 0;">resume</button>
-      </a>
+      <div>
+        <a>
+          <button class="button2" id="botonPDF"><span>resume</span></button>
+        </a>
+        <div class="containerButtonC">
+          <button class="button3" id="copyButton" data-email="tuemail@example.com">
+            open to work      
+            <span class="tooltip">bidalsabrina@gmail.com</span>
+          </button>
+          <p id="message"></p>
+        </div>
+      </div>
     </div>
   </div>
 
 <!-- Link JavaScript -->
-  <script src="../javascript/finisher-header.es5.min.js"></script>
-  <script type="text/javascript">
-    new FinisherHeader({
-      "count": 10,
-      "size": {
-        "min": 2,
-        "max": 40,
-        "pulse": 0.2
-      },
-      "speed": {
-        "x": {
-          "min": 0,
-          "max": 0.2
-        },
-        "y": {
-          "min": 0,
-          "max": 0.2
-        }
-      },
-      "colors": {
-        "background": "#ffffff",
-        "particles": [
-          "#b5838d",
-          "#6d6875",
-          "#e5989b",
-          "#ffb4a2",
-          "#ffcdb2"
-        ]
-      },
-      "blending": "screen",
-      "opacity": {
-        "center": 0.65,
-        "edge": 0.65
-      },
-      "skew": 0,
-      "shapes": [
-        "c"
-      ]
-    });
-  </script>
+  <script src="../javascript/interactions.js"></script>
 </body>
 </html>
