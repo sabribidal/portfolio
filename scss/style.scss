@@ -143,14 +143,8 @@
     }
 }
 
-/* @media only screen and (max-width: 600px) {
-    .navBar{
-        .navBar-list{
-            top: 280px; left: 40px;
-        }
+@media (max-width: 768px) {
+    .boton-menu{
+        right: 15%;
     }
-
-    .container{
-        overflow: auto;
-    }
-} */
+}
