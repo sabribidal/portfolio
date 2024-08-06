@@ -97,6 +97,10 @@
   .button1 {
     margin: 10px;
   }
+  .button2, .button3 {
+    margin: 10px;
+    margin-left: 0;
+  }
 }
 .background {
   background-color: #FAFAFA;
@@ -245,7 +249,7 @@
     position: sticky;
     padding-bottom: 5%;
   }
-  .footerRedes img {
+  .footerRedes .icons-container img {
     width: 20px;
     height: 20px;
   }
@@ -257,6 +261,9 @@
   }
   .footerRedes h5 span {
     font-weight: 500;
+  }
+  .footerRedes .bandera {
+    margin-left: 5px;
   }
   .footerRedes .hover-container .stars {
     display: none;
@@ -408,28 +415,30 @@
   opacity: 1;
 }
 
-/* @media only screen and (max-width: 600px) {
+/* @media (max-width: 768px) {
+    .backgroundWork{
+        .circle4{
+            transform: none;
+        }
+    }
+
     .proyects{
         height: 80%;
-        justify-content: center;
+        flex-direction: column;
 
         .proyects-left{
-            left: unset; bottom: unset;
-            width: 90%; height: 30%;
 
             img{
-                border-radius: 30px 30px 30px 30px;
+                border-radius: 30px;
+                margin: 5%;
+                width: unset;
+                height: 30%;
             }
         }
 
         .proyects-right{
-            width: 90%;
-            right: unset; bottom: 0;
-
-            .proyect-name{
-                margin-left: unset; margin-bottom: 20%;
-                width: unset;
-            }
+            width: unset;
+            position: unset;
         }
     }
 } */
@@ -521,28 +530,24 @@
   opacity: 1;
 }
 
-/* @media only screen and (max-width: 600px) {
-    .photo-me{
-        top: 15%; right: unset;
-        width: 380px;
-        height: 500px;
-
-        img{
-            border-radius: 30px;
-        }
-    }
-
-    .about{
-        width: 380px;
-        left: unset;
-        margin: 0;
-        transform: translateY(400px);
-
-        .page-name-me{
-            width: 100%;
-        }
-    }
-} */
+@media (max-width: 768px) {
+  .backgroundAbout .circle5 {
+    transform: translate(80%, -40%);
+    position: fixed;
+  }
+  .backgroundAbout .circle6 {
+    transform: translate(85%, 80%);
+    position: fixed;
+  }
+  .about {
+    margin: 10%;
+    width: auto;
+    top: 20%;
+  }
+  .about .page-name-me {
+    width: auto;
+  }
+}
 /* Fonts */
 .container {
   position: absolute;
@@ -674,6 +679,13 @@
 @media (max-width: 768px) {
   .boton-menu {
     right: 15%;
+  }
+  .boton-menu .cerrar .boton-cerrar {
+    right: 15%;
+  }
+  .navBar .navBar-list {
+    top: 35%;
+    left: 15%;
   }
 }
 

@@ -146,5 +146,17 @@
 @media (max-width: 768px) {
     .boton-menu{
         right: 15%;
+
+        .cerrar{
+            .boton-cerrar{
+                right: 15%;
+            }
+        }
+    }
+
+    .navBar{
+        .navBar-list{
+            top: 35%; left: 15%;
+        }
     }
 }

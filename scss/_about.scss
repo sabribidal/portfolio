@@ -88,26 +88,26 @@
     opacity: 1;
 }
 
-
-/* @media only screen and (max-width: 600px) {
-    .photo-me{
-        top: 15%; right: unset;
-        width: 380px;
-        height: 500px;
-
-        img{
-            border-radius: 30px;
+@media (max-width: 768px) {
+    .backgroundAbout{
+        .circle5{
+            transform: translate(80%, -40%);
+            position: fixed;
+        }
+        
+        .circle6{
+            transform: translate(85%, 80%);
+            position: fixed;
         }
     }
 
     .about{
-        width: 380px;
-        left: unset;
-        margin: 0;
-        transform: translateY(400px);
-
+        margin: 10%;
+        width: auto;
+        top: 20%;
+        
         .page-name-me{
-            width: 100%;
+            width: auto;
         }
     }
-} */
+}

@@ -156,28 +156,30 @@
     opacity: 1;
 }
 
-/* @media only screen and (max-width: 600px) {
+/* @media (max-width: 768px) {
+    .backgroundWork{
+        .circle4{
+            transform: none;
+        }
+    }
+
     .proyects{
         height: 80%;
-        justify-content: center;
+        flex-direction: column;
 
         .proyects-left{
-            left: unset; bottom: unset;
-            width: 90%; height: 30%;
 
             img{
-                border-radius: 30px 30px 30px 30px;
+                border-radius: 30px;
+                margin: 5%;
+                width: unset;
+                height: 30%;
             }
         }
 
         .proyects-right{
-            width: 90%;
-            right: unset; bottom: 0;
-
-            .proyect-name{
-                margin-left: unset; margin-bottom: 20%;
-                width: unset;
-            }
+            width: unset;
+            position: unset;
         }
     }
 } */

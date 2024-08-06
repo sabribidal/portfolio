@@ -166,9 +166,11 @@
         position: sticky;
         padding-bottom: 5%;
 
-        img{
-            width: 20px;
-            height: 20px;
+        .icons-container{
+            img{
+                width: 20px;
+                height: 20px;
+            }
         }
 
         h4{
@@ -181,6 +183,10 @@
             span{
                 font-weight: 500;
             }
+        }
+
+        .bandera{
+            margin-left: 5px;
         }
 
         .hover-container{
